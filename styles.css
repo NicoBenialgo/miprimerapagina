@@ -1,0 +1,484 @@
+* { /* Cambios generales en el sitio */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/***** Cambios en etiquetas HTML *****/
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Dosis', 'Trebuchet MS', Arial, sans-serif; 
+}
+
+header {
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    background-color: #674980;
+    display: flex;
+    justify-content: space-between;/* sacando por un momento el border
+    border: 1px solid #fff;*/
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    padding: 20px 40px;
+}
+
+header, footer {
+    font-size: 18px;
+    color: #fff;
+}
+
+main {
+    margin-top: 70px; /* Arreglando las consecuencias de colocar 'fixed' */
+    background-color:#e4ddf3;
+    font-size: 26px;
+}
+
+h1 {
+    font-size: 45px;
+    color: #ffffff;
+    font-family: 'Patrick Hand', 'Dosis', Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+    color: black;
+    font-family: 'Patrick Hand', 'Dosis', Helvetica, Arial, sans-serif;
+}
+
+
+section:not(.banner-section) {
+    padding: 5% 10%;
+}
+
+/***** Cambios específicos en etiquetas HTML *****/
+
+main p {
+    color: rgb(23, 23, 23);
+}
+
+header i, footer a {
+    color:#cdbcff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #cbec5e;
+    font-weight: bold;
+}
+
+/***** Cambios en clases *****/
+.checkbtn {
+    font-size: 25px;
+    color: rgb(186, 5, 5);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar ul {/* sacando por un momento el border
+    border: 1px solid #fff;*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul li {
+    margin: 10px;
+}
+
+.navbar a {
+    color: white;
+}
+
+.banner-text {
+    text-align: center;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;/* sacando por un momento el border
+    border: 1px solid #fff;*/
+    width: 90%;
+}
+
+.about-image, .about-text {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.about-image {
+    width: 35%;
+    justify-content: flex-end;
+}
+
+.about-text {
+    width: 65%;
+    justify-content: flex-start;
+}
+
+.about-image img {
+    border: 3px solid #242424;
+    width: 80%;
+}
+
+.about-text p {
+    font-size: 22px;
+}
+
+.end-page {
+    display: flex; 
+    align-items: flex-start;
+}
+
+.banner-section img {
+    width: 100%;
+}
+
+/***** Cambios en IDs *****/
+#check {
+    display: none;
+}
+
+#subway {
+    font-weight: bold;
+    color: #238b1e;
+}
+
+#end-social{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+#end-resume {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+#end-social {
+    align-items: flex-start;
+    width: 50%;
+}
+
+#end-resume {
+    align-items: flex-end;
+    width: 50%;
+}
+
+/***** Content section *****/
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content-section h2 {
+    margin-bottom: 30px;
+}
+
+.content-general {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+}
+
+.content-body {
+    align-items: center;
+    flex-direction: row;
+    width: 25%;
+    background-color:#ecdafa;
+    border-radius: 20px;
+    height: auto;
+    text-align: center;
+}
+
+/*
+.content-title {
+     por ahora nada 
+}*/
+
+.content-image img {
+    width: 100%;
+    height: 220px;
+    border-radius: 20px;
+}
+
+.content-description {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.content-more {
+    background-color: #cdbcff;
+    border-radius: 10px;
+}
+
+.content-more a {
+    color: #222;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/***** FORMULARIO de contacto *****/
+
+/* ------------- Encabezado Contacto ------------- */
+
+.contact-section {
+    background-color: #d7a2e1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 3px;
+    width: 100%;
+    margin: 10px auto;
+    padding: 50px;
+    color: black;
+}
+
+.contact-section p{
+    color: black;
+}
+
+h2 {
+    font-size: 40px;
+    color: black;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #cb81d9;
+    border-radius: 3px;
+    color: black;
+    padding: 20px;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 1px solid #444;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .contact-section {
+        padding: 50px;
+    }
+
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="email"]  {
+        width: 320px;
+        height: initial;
+    }
+
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+}
+
+
+.form-row textarea {
+    font-size: 14px;
+
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+
+    min-height: 180px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+
+
+    min-width: 320px;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+.form-row textarea {
+    width: 250px;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+
+    color: #ffffff;
+    background-color: #5995da;
+
+
+    border: none;
+    border-radius: 3px;
+
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+
+.form-row button:hover {
+    background-color: #76aeed;
+}
+
+
+.form-row button:active {
+    background-color: #407fc7;
+}
+
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+.form-row button {
+    margin-left: 120px;
+}
+
+@media (max-width: 1024px) {
+    /* para pantallas medianas */
+    .content-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .content-general {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .content-body {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 95%;
+        background-color:#ecdafa;
+        border-radius: 20px;
+        height: auto;
+        text-align: center;
+        padding: 15px 0;
+    }
+}
+/***** Estilos para pantallas medianas (hasta 768px) *****/
+@media (max-width: 768px) {
+    /* Portabilización de la barra de navegación */
+    .checkbtn {
+        display: block;
+    }
+    .navbar {
+        height: 0vh;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(68, 44, 80);
+        text-align: center;
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+    .navbar ul.menu {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        opacity: 0;
+        font-size:x-large;
+    }
+    .navbar ul.menu li {
+        display: block;
+    }
+    .navbar ul.menu li a {
+        display: block;
+    }
+    .navbar ul.menu li a:hover {
+        background-color:rgba(115, 79, 134, 0.1);
+        color: #df899a;
+    }
+    /* ACTIVE */
+    .navbar.active {
+        height: 100vh;
+    }
+    .navbar.active ul.menu {
+        opacity: 1;
+    }
+    /* Portabilización del sitio en general */
+    header {
+      background-color: rgb(184, 95, 129);
+    }
+    section:not(.banner-section) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 95%;
+    }
+    .about-image, .about-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .about-image img {
+        border: 3px solid #242424;
+        width: 80%;
+    }
+    .about-text p {
+        font-size: 22px;
+        text-align: center;
+        font-weight: 500;
+    }
+}

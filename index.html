@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer sitio con Egg</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e26dbc3af6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-hashtag fa-2xl"></i></a>
+            <h1 id="cambio-nombre">Sanzo</h1>
+        </div>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a class="navli" href="index.html">Inicio</a></li>
+                <li><a class="navli" href="#proyectos">Sobre mí</a></li>
+                <li><a class="navli" href="#huellas">Huellas</a></li>
+                <li><a class="navli" href="#contacto">Contacto</a></li>
+                <li><a class="navli" href="#tema">Día / Noche</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="seccion-principal">
+        <section class="about-section">
+            <div class="about-image">
+                <img src="./images/avatar-img.jpg" alt="Imagen personal">
+            </div>
+            <div class="about-text">
+                <p class="parrafo1">
+                    Sean bienvenidos a mi sitio web.
+                    Mi nombre es <strong>Nicolas Federico Benialgo</strong>, pero siempre me dicen "Nico". Nací en Morón
+                    y crecí en Merlo, ambas ciudades del conurbano Bonaerense.
+                    Soy fanático del helado, de los sandwiches de <span id="subway">Subway</span> y de los viajes no
+                    grupales.
+                    <br /><br />
+                    Aspiro a poder ser un buen programador que me permita retribuir todo el conocimiento y
+                    acompañamiento que me ha dado mucha gente a lo largo de mi vida.
+                </p>
+            </div>
+        </section>
+        <section class="banner-section">
+            <img src="./images/img-banner.jpg" alt="Imagen a usarse como banner">
+        </section>
+        <section class="content-section">
+            <h2>Algunos datos</h2>
+            <div class="content-general">
+                <div class="content-body">
+                    <div class="content-image">
+                        <img src="./images/img-content-01.jpg" alt="">
+                    </div>
+                    <div class="content-title">
+                        <h3>Mis actividades extracurriculares</h3>
+                    </div>
+                    <div class="content-description">
+                        <p>
+                            A lo largo de mi vida, he pasado por muchas actividades de las que fui nutriéndome.
+                            Desde Inglés hasta Teatro; desde Diseño Gráfico hasta Locución.
+                        </p>
+                    </div>
+                    <div class="content-more">
+                        <a href="/mi_primera_web/subpages/about-me.html">Saber más</a>
+                    </div>
+                </div>
+                <div class="content-body">
+                    <div class="content-image">
+                        <img src="./images/img-content-02.jpg" alt="">
+                    </div>
+                    <div class="content-title">
+                        <h3>Mi tiempo en FANDOM</h3>
+                    </div>
+                    <div class="content-description">
+                        <p>
+                            Mi "romance" con el arte de la programación surgió a medida que me adentré dentro de un sitio
+                            web al que asisto hace mucho: <b>FANDOM</b>.
+                        </p>
+                    </div>
+                    <div class="content-more">
+                        <a href="/mi_primera_web/subpages/about-me.html">Saber más</a>
+                    </div>
+                </div>
+                <div class="content-body">
+                    <div class="content-image">
+                        <img src="./images/img-content-01.jpg" alt="">
+                    </div>
+                    <div class="content-title">
+                        <h3>Mis actividades extracurriculares</h3>
+                    </div>
+                    <div class="content-description">
+                        <p>
+                            A lo largo de mi vida, he pasado por muchas actividades de las que fui nutriéndome.
+                            Desde Inglés hasta Teatro; desde Diseño Gráfico hasta Locución.
+                        </p>
+                    </div>
+                    <div class="content-more">
+                        <a href="/mi_primera_web/subpages/about-me.html">Saber más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section">
+            <h2>Contacto</h2>
+            <p><em>¡Esperamos tu consulta!</em></p>
+            <div class="formulario">
+                <form action="" method="get" class="" id="form">
+                    <div class="form-row">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" />
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="pepe@gmail.com" />
+                    </div>
+                    <div class="form-row">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="end-page">
+            <div id="end-social">
+                <a href="https://comunidad.fandom.com/User:MoonArmin" target="_blank"
+                    alt="Mi cuenta de la red FANDOM.">Cuenta de FANDOM</a>
+                <a href="mailto:nicolasbenialgo@gmail.com" alt="Mi correo electrónico" target="_blank">Mi Gmail</a>
+                <a href="https://github.com/nicobenialgo" alt="Mi página de Github" target="_blank">Mi Github</a>
+            </div>
+            <div id="end-resume">
+                <p>Nicolas Benialgo</p>
+                <p>Buenos Aires, Argentina</p>
+                <p>Estudiante de programación.</p>
+                <p>Sitio realizado con HTML y CSS.</p>
+                <p>Bajo observación de Egg.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
